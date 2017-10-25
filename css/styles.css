@@ -2,6 +2,73 @@
 	box-sizing: border-box;
 }
 
+body, html {
+	height: 100%;
+	margin: 0;
+}
+
 body {
 	font-family: "Open Sans", sans-serif;
+	font-size: 100%;
+	color: #fff;
+	background-color: #0e223d;
 }
+
+/* Landing page */
+.header {
+	font-family: "Volkhov", serif;
+	font-size: 4em;
+	font-weight: bold;
+}
+
+.intro {
+	position: relative;
+	height: 100%;
+	z-index: 1;
+}
+
+.intro .bg {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	z-index: -1;
+	background-image: url("/img/pm.jpg");
+	opacity: 0.6;
+	filter: alpha(opacity=60); /* For IE8 and earlier */
+	
+	/* Center and scale image */
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.caption {
+	position: absolute;
+	left: 0;
+	top: 40%;
+	width: 100%;
+	text-align: center;
+	color: #fff;
+}
+
+/* Section headers */
+.section {
+	position: relative;
+	z-index: 1;
+}
+
+/* add section_title */
+
+.section .bgimg-1, .bgimg-2, .bgimg-3 {
+	position: absolute;
+	z-index: -1;
+	
+	/* Center and scale image */
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+
+
+
