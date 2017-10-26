@@ -1,3 +1,12 @@
+@font-face {
+	font-family: 'Chronicle Display Bold';
+	src: url("../fonts/ChronicleDisplay-Bold.eot"); /* IE9 Compat Modes */
+	src: url("../fonts/ChronicleDisplay-Bold.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+		url("../fonts/ChronicleDisplay-Bold.woff") format("woff"), /* Modern browsers */
+		url("../fonts/ChronicleDisplay-Bold.ttf") format("truetype"), /* Safari, Android, iOS */
+		url("../fonts/ChronicleDisplay-Bold.svg#ChronicleDisplay-Bold") format("svg"); /* Legacy iOS */
+}
+
 * {
 	box-sizing: border-box;
 }
@@ -5,14 +14,31 @@
 body, html {
 	height: 100%;
 	margin: 0;
+	padding: 0;
 }
 
 body {
-	font-family: "Open Sans", sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	font-size: 100%;
 	color: #fff;
 	background-color: #0e223d;
 }
+
+h1 {
+	font-family: 'Chronicle Display Bold', serif;
+	font-size: 3em;
+}
+
+hr {
+	border: 0;
+	height: 3px;
+	background: #de124d;
+	width: 10%;
+	margin-left: 0;
+	text-align: left; /* For IE and Opera */
+	
+	background-image: linear-gradient(to right, #de124d, #223053);
+}	
 
 /* Navbar */
 .navbar {
@@ -55,9 +81,8 @@ body {
 
 /* Landing page */
 .header {
-	font-family: "Volkhov", serif;
+	font-family: 'Chronicle Display Bold', serif;
 	font-size: 4em;
-	font-weight: bold;
 }
 
 .intro {
@@ -76,6 +101,7 @@ body {
 	filter: alpha(opacity=60); /* For IE8 and earlier */
 	
 	/* Center and scale image */
+	background-attachment: fixed;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -96,20 +122,37 @@ body {
 	z-index: 1;
 }
 
-/* add section_title */
+.section-title {
+	font-family: 'Chronicle Display Bold', serif;
+	font-size: 3em;
+	
+	position: absolute;
+	left: 0;
+	top: 50%;
+	width: 100%;
+	text-align: center;
+}
+
+/*
+.bgimg-1 {background-image: url("/img/lighthouse.jpg");}
+
+.bgimg-2 {background-image: url("/img/heaven.jpg");}
+
+.bgimg-3 {background-image: url("/img/thunderclouds.jpg");}
+*/
 
 .section .bgimg-1, .bgimg-2, .bgimg-3 {
 	position: absolute;
 	z-index: -1;
 	
 	/* Center and scale image */
+	background-attachment: fixed;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
 }
 
-#main {height: 1000px;}
-
+#about, #skills, #projects, #experience, #contact {margin: 5% 5%;}
 
 
 
