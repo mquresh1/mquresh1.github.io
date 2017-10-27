@@ -6,6 +6,7 @@
   <meta name="description" content="Personal Website">
   <meta name="author" content="Mohammad Qureshi">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
   <link rel="stylesheet" href="css/styles.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
@@ -14,11 +15,11 @@
 <body>
   <div class="navbar">
     <ul>
-	  <li><a href="#about">About</a></li>
-	  <li><a href="#skills">Skills</a></li>
-	  <li><a href="#projects">Projects</a></li>
-	  <li><a href="#experience">Experience</a></li>
-	  <li><a href="#contact">Contact</a></li>
+	  <li><a href="#about"><i class="fa fa-user fa-fw"></i>About</a></li>
+	  <li><a href="#skills"><i class="fa fa-lightbulb-o fa-fw"></i>Skills</a></li>
+	  <li><a href="#projects"><i class="fa fa-th fa-fw"></i>Projects</a></li>
+	  <li><a href="#experience"><i class="fa fa-graduation-cap fa-fw"></i>Experience</a></li>
+	  <li><a href="#contact"><i class="fa fa-envelope fa-fw"></i>Contact</a></li>
 	</ul>
   </div>
   <div class="intro">
@@ -29,25 +30,81 @@
 	</div>
   </div>
   <div id="about">
-    <h1>Hi, I'm Mohammad.</h1>
-	<hr>
-	<p>
-	I'm a recent graduate from the University of California, Irvine. I have a Bachelor's in Computer Science with a
-	specialization in Information. I have a firm foundation in objected-oriented programming languages from Python to Java.
-	I look to write efficient and elegant code and am always looking for ways to improve and learn new things. I'm currently
-	looking for a Software Engineering position where I can have plently of opportunities to grow with those who are as excited
-	about teaching as I am with learning.
-	</p>
-	<p>
-	My recent interests have led me to learn more about the front-end side of programming, such as using HTML/CSS. In fact,
-	this website is my current project! It provides me with a playground to test and cement my new knowledge along with allowing
-	any who happen upon it to get a better idea of who I am. I hope you enjoy your stay.
-	</p>
-	<p>P.S.: Credit to the amazing artwork used for my backgrounds on this website go to 
-	<a href="https://aenamiart.artstation.com/">Alena Aenami</a>, make sure to check out her work!
-	</p>
+    <div class="content">
+      <h1>Hi, I'm Mohammad.</h1>
+	  <hr class="left">
+	  <p>
+	  I'm a recent graduate from the University of California, Irvine. I have a Bachelor's in Computer Science with a
+	  specialization in Information. I have a firm foundation in objected-oriented programming languages from Python to Java.
+	  I look to write efficient and elegant code and am always looking for ways to improve and learn new things. I'm currently
+	  looking for a Software Engineering position where I can have plently of opportunities to grow with those who are as excited
+	  about teaching as I am with learning.
+	  </p>
+	  <p>
+	  My recent interests have led me to learn more about the front-end side of programming, such as using HTML/CSS. In fact,
+	  this website is my current project! It provides me with a playground to test and cement my new knowledge along with allowing
+	  any who happen upon it to get a better idea of who I am. I hope you enjoy your stay.
+	  </p>
+	  <p>P.S. : Credit to the amazing artwork used for my backgrounds on this website go to 
+	  <a href="https://aenamiart.artstation.com/">Alena Aenami</a>, make sure to check out her work!
+	  </p>
+	</div>
   </div>
   <div id="skills">
+    <div class="section">
+	  <div class="bgimg-1"></div>
+	  <span class="section-title">Skills</span>
+	</div>
+	<div class="content">
+	  <div class="row">
+	    <div class="col-3 box">
+		  <h2 style="text-align:center;"><i class="fa fa-file-code-o fa-fw fa-lg"></i>LANGUAGES</h2>
+		  <p>Python</p>
+		  <div class="container">
+		    <div class="skills python"></div>
+		  </div>
+		
+		  <p>Java</p>
+		  <div class="container">
+			<div class="skills java"></div>
+		  </div>
+		
+		  <p>C++</p>
+		  <div class="container">
+			<div class="skills cpp"></div>
+		  </div>
+		
+		  <p>C</p>
+		  <div class="container">
+			<div class="skills c"></div>
+		  </div>
+		
+		  <p>SQL</p>
+		  <div class="container">
+			<div class="skills sql"></div>
+		  </div>
+		
+		  <p>HTML</p>
+		  <div class="container">
+		    <div class="skills html"></div>
+		  </div>
+		
+		  <p>CSS</p>
+		  <div class="container">
+		    <div class="skills css"></div>
+		  </div>
+	    </div>
+		<div class="col-1 box">
+		  <h2 style="margin-left:35px;"><i class="fa fa-wrench fa-fw fa-lg"></i>TOOLS</h2>
+		  <ul class="fa-ul tools">
+		    <li><i class="fa-li fa fa-check-square-o fa-fw"></i>Git + GitHub</li>
+			<li><i class="fa-li fa fa-check-square-o"></i>Vim</li>
+			<li><i class="fa-li fa fa-check-square-o"></i>Eclipse</li>
+			<li><i class="fa-li fa fa-check-square-o"></i>MySQL</li>
+		  </ul>
+		</div>
+	  </div>
+	</div>
   </div>
 </body>
 </html>
