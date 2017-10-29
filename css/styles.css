@@ -34,7 +34,7 @@ hr {
 	display: block;
 	position: relative;
 	padding: 0;
-	margin: 1em auto;
+	margin: 40px auto;
 	height: 0;
 	width: 10%;
 	
@@ -232,5 +232,64 @@ ul.tools li {
 	margin-bottom: 20px;
 }
 
+/* Project logo */
+.row.project {
+	height: 200px;
+}
+
+.col-1.logo {
+	height: 200px;
+	text-align: center;
+	vertical-align: bottom;
+}
+
+.logo img {
+	height: 100%;
+	width: 100%;
+	object-fit: contain;
+}
+
+.project-title {margin: 0}
+
+.project-title h2 {
+	display: inline;
+}
+
+.project-title a {
+	float: right;
+	color: #de124d;
+	border: 2px solid #de124d;
+	border-radius: 3px;
+	padding: 5px;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.project-title a:hover {
+	color: #fff;
+	background-color: #de124d;
+}	
+
+/* Project tags */
+.tags {
+	bottom: 0;
+}
+
+.tags ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+.tags li {
+	float: left;
+	border: 2px solid #333;
+	background-color: #de124d;
+	border-radius: 4px;
+	padding: 3px 5px;
+	margin-right: 5px;
+	font-size: .75em;
+}
 
 
