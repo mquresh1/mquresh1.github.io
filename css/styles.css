@@ -34,7 +34,7 @@ hr {
 	display: block;
 	position: relative;
 	padding: 0;
-	margin: 40px auto;
+	margin: 20px auto;
 	height: 0;
 	width: 10%;
 	
@@ -52,7 +52,7 @@ hr {
 
 hr.left {
 	text-align: left;
-	margin-left: 0; /* Cross browser support */
+	margin: 40px auto 40px 0;
 }
 
 .col-1 {width: 25%;}
@@ -154,9 +154,9 @@ hr.left {
 }
 
 /* Section format */
-.content {
-	margin: 5% 5%;
-}
+.content {margin: 5% 5%;}
+
+.content.narrow {margin: 5% 10%;}
 
 /* Section headers */
 .section {
@@ -193,8 +193,8 @@ hr.left {
 	width: 100%;
 	height: 100%;
 	z-index: -1;
-	opacity: 0.6;
-	filter: alpha(opacity=60); /* For IE8 and earlier */
+	opacity: 0.5;
+	filter: alpha(opacity=50); /* For IE8 and earlier */
 	
 	/* Center and scale image */
 	background-attachment: fixed;
@@ -291,5 +291,35 @@ ul.tools li {
 	margin-right: 5px;
 	font-size: .75em;
 }
+
+/* Education section */
+.education-container {
+	text-align: center;
+}
+
+.university {
+	font-size: 1.25em;
+	font-weight: bold;
+}
+
+.school {
+	font-size: 1.1em;
+	font-weight: bold;
+	color: #de124d;
+}
+
+table, th, td {
+	border: 1px solid #de124d;
+	border-collapse: collapse;
+}
+
+table {
+	width:100%;
+	margin: 50px 0;
+}
+
+th, td {padding: 5px;}
+
+tr:nth-child(odd) {background-color: #de124d;}
 
 
