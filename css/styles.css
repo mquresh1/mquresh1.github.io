@@ -24,6 +24,13 @@ body {
 	background-color: #0e223d;
 }
 
+@media only screen and (max-width: 600px) {
+	/* For mobile devices */
+	body {
+        font-size: 90%;
+    }
+}
+
 h1 {
 	font-family: 'Chronicle Display Bold', serif;
 	font-size: 3em;
@@ -75,8 +82,10 @@ hr.left {
 .row::after {
 	content: "";
 	clear: both;
-	display: table;
+	display: block;
 }
+
+#about, #skills, #projects, #experience {padding-top: 40px;}
 
 /* Navbar */
 .navbar {
@@ -86,6 +95,13 @@ hr.left {
 	z-index: 2;
 	top: 0;
 	width: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+	/* For mobile devices */
+	.navbar {
+        display: none;
+    }
 }
 
 .navbar.on-main {
@@ -335,7 +351,7 @@ tr:nth-child(odd) {background-color: #de124d;}
 
 .resume {height: 20%;}
 
-.resume a{
+.resume a {
 	border: 1px solid #0e223d;
 	border-radius: 5px;
 	padding: 5px 10px;
